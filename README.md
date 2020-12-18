@@ -18,11 +18,11 @@ git clone https://github.com/yxzhu16/bbc-crawler.git
 cd bbc-crawler
 ```
 
-Create an input.txt file to list urls for all sections. See ex-input.txt for an example. For multi-page sections, put a placeholder {n} followed by a whitespace and the total number of pages. 
+Create an input.txt file to list urls for all sections. See example-input.txt for an example. For multi-page sections, put a placeholder {n} followed by a whitespace and the total number of pages. 
 
 Run get_pages_url.sh
 ```shell
-./get_pages_url.sh gahuza ex-input.txt
+./get_pages_url.sh gahuza example-input.txt
 ```
 
 This will first generate two .txt files:
