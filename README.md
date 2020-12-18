@@ -31,7 +31,7 @@ This will first generate two .txt files:
 
 And then it started to crawl using `gahuza_pages_url.txt` and store the result into a folder.
 
-You will be able to replay the entire web using [ReplayWeb.page](https://replayweb.page), by loading the WARC file (the one ending with 0000.warc.gz). For details, please check its [doc](https://replayweb.page/docs/loading).
+You will be able to replay the entire site using [ReplayWeb.page](https://replayweb.page), a webapp for replaying warc files. Load the WARC file (the one ending with 0000.warc.gz) and you are good to go. For details, please check its [doc](https://replayweb.page/docs/loading).
 
 If you would like to extract plain text using [AUT](https://github.com/archivesunleashed/aut):
 
@@ -66,4 +66,9 @@ Take gahuza as an example,
 2. Use lynx or AUT to extract links
 3. Crawl those page links
 
+## Other methods tried
+I tried various tools to crawl sites and view the crawled warc files, and summarized what I found in [this doc](
+https://docs.google.com/document/d/1clAryFqRYoNsITGJxHiMHCBMPhgiEZpxulN45CyMciM/edit?usp=sharing)
+
+tl;dr: I picked grab-site to crawl the sites and Replayweb.page to replay the sites. 
 
