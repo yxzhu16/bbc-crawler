@@ -17,12 +17,19 @@ Clone the repo:
 git clone https://github.com/yxzhu16/bbc-crawler.git
 cd bbc-crawler
 ```
+First, start the grab-site dashboard with:
+
+```
+gs-server
+```
+
+and point your browser to http://127.0.0.1:29000/
 
 Create an input.txt file to list urls for all sections. See example-input.txt for an example. For multi-page sections, put a placeholder {n} followed by a whitespace and the total number of pages. 
 
-Run get_pages_url.sh
+Run get_pages.sh
 ```shell
-./get_pages_url.sh gahuza example-input.txt
+./get_pages.sh gahuza example-input.txt
 ```
 
 This will first generate two .txt files:
@@ -30,6 +37,8 @@ This will first generate two .txt files:
 - gahuza_pages_url.txt: URLs for all article pages to be crawled
 
 And then it started to crawl using `gahuza_pages_url.txt` and store the result into a folder.
+
+The crawling process can take several hours, depending on the size of the site.
 
 You will be able to replay the entire site using [ReplayWeb.page](https://replayweb.page), a webapp for replaying warc files. Load the WARC file (the one ending with 0000.warc.gz) and you are good to go. For details, please check its [doc](https://replayweb.page/docs/loading).
 
